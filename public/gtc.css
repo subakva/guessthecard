@@ -1,0 +1,65 @@
+body {
+  background-color: #777111;
+}
+#gtc {
+  width: 400px;
+  margin: 0px auto;
+  padding: 2px;
+  background-color: #FFF;
+  color: #000;
+  text-align: center;
+  cursor: default;
+}
+#gtc #message {
+  height: 40px;
+  margin: 10px;
+  padding: 2px;
+  background-color: #EEE;
+  border: 1px solid #CCC;
+  font-style: italic;
+}
+.selector .values {
+}
+.selector .values a {
+  border: 1px solid #CCC;
+  padding: 0 4px;
+  background-color: #FFF;
+  color: #000;
+  font-family: Courier, monospace;
+  text-decoration: none;
+}
+.selector .values a:hover {
+  border: 1px solid #000;
+}
+.selector .suits {
+  margin-top: 10px;
+}
+.selector .suits img {
+  border: none;
+}
+.selector .suits a {
+  border: 1px solid #CCC;
+  padding: 0 4px;
+  padding-top: 6px;
+  background-color: #FFF;
+  color: #000;
+}
+.selector .suits a:hover {
+  border: 1px solid #000;
+}
+#gtc #selected {
+  margin-top: 10px;
+  font-size: 200%;
+}
+#gtc input {
+  background-color: #EEE;
+  color: #000;
+  border: 1px outset #333;
+}
+#gtc #speech-bubble {
+  position: absolute;
+  top: 220px;
+  left: 20px;
+  width: 150px;
+  text-align: left;
+}

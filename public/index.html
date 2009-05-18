@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+  <title>Guess The Card</title>
+
+  <link rel="stylesheet" href="cards/cards.css" type="text/css" media="screen" title="cards" charset="utf-8" />
+  <link rel="stylesheet" href="gtc.css" type="text/css" media="screen" title="cards" charset="utf-8" />
+
+  <script src="cards/cards.js" type="text/javascript" language="javascript" charset="utf-8"></script>
+  <script src="gtc.js" type="text/javascript" language="javascript" charset="utf-8"></script>
+  <script src="init.js" type="text/javascript" language="javascript" charset="utf-8"></script>
+</head>
+
+<body onload="initPage()">
+  <div id="gtc">
+    <div class="sender">
+      <div style="position: relative">
+        <img id="sender-img" src='images/guess.jpg' alt='Guess the card.' />
+        <div id="speech-bubble"></div>
+      </div>
+    </div>
+    <div id="message"></div>
+    <div class="selector">
+      <div id='values' class="values"></div>
+      <div id='suits' class="suits"></div>
+      <div id="selected">
+        <span id="selected-value"></span> of <span id="selected-suit"></span>
+      </div>
+      <div class="controls">
+        <input type="submit" id="new-card" name="new-card" value="New Card" accesskey="n" />
+        <input type="submit" id="ask-tim" name="ask-tim" value="Ask Tim" accesskey="h"/>
+        <input type="submit" id="guess" name="guess" value="Guess" accesskey="g"/>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
