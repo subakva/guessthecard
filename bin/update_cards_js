@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+
+require 'FileUtils'
+
+cards_js_dir = '../cards-js'
+public_cards_dir = 'public/cards'
+
+to_copy = %w{
+  cards.js
+  cards.css
+  images
+}
+to_copy.each do |name|
+  FileUtils::Verbose.mkdir_p(public_cards_dir) unless File.exists?(public_cards_dir)
+  FileUtils::Verbose.cp_r(File.join(cards_js_dir, name), File.join(public_cards_dir, name))
+end
