@@ -1,7 +1,7 @@
 require 'rubygems'
 require 'sinatra'
 
-set :public, 'public'
+set :public_folder, 'public'
 
 get '/' do
   redirect '/index.html'
